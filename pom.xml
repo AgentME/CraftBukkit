@@ -264,11 +264,20 @@
                     <shadedPattern>org.bukkit.craftbukkit.v${minecraft_version}</shadedPattern>
                     <excludes>
                         <exclude>org.bukkit.craftbukkit.Main*</exclude>
+                        <exclude>org.bukkit.craftbukkit.v${minecraft_version}.*</exclude>
+                        <exclude>org.bukkit.craftbukkit.libs.joptsimple.*</exclude>
+                        <exclude>org.bukkit.craftbukkit.libs.jline.*</exclude>
+                        <exclude>org.bukkit.craftbukkit.libs.org.ibex.*</exclude>
+                        <exclude>org.bukkit.craftbukkit.libs.org.gjt.*</exclude>
+                        <exclude>org.bukkit.craftbukkit.libs.com.google.gson.*</exclude>
                     </excludes>
                 </relocation>
                 <relocation>
                     <pattern>net.minecraft.server</pattern>
                     <shadedPattern>net.minecraft.server.v${minecraft_version}</shadedPattern>
+                    <excludes>
+                        <exclude>net.minecraft.server.v${minecraft_version}.*</exclude>
+                    </excludes>
                 </relocation>
               </relocations>
             </configuration>
